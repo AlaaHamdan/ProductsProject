@@ -1,0 +1,17 @@
+
+  <div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-lg-4 col-sm-4 ">
+    <h3 class="text-info">  Add Product:</h3>
+  <form #addPrdct = "ngForm" >
+<label class="control-label text-info">product name</label> 
+ <input name="Pname" ngModel class="form-control"/>
+<br/>
+ <label class="control-label text-info">product price</label> 
+ <input name="Pprice" ngModel class="form-control"/>
+ <br/>
+ <label class="control-label text-info">product image</label> 
+ <input name="Pimg" ngModel class="form-control"/>
+ <br/>
+ <input type = "submit" (click)="addNewProduct(addPrdct.value)" value = "Add" class="btn btn-primary">
+  </form>
+</div>
+ 

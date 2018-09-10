@@ -1,0 +1,16 @@
+<hr/>
+
+<div class="align-middle">
+    <h2 class="text-left text-info"> {{title}}  </h2>
+    <br/>
+  <table class="table table-bordered table-responsive table-hover text-info ">
+<tr class=" bg-info text-white">
+<td *ngFor="let c of cat" (click)="OnSelect(c)">{{c.name}}</td>
+</tr>
+<tr><td *ngFor="let c of cat" (click)="OnSelect(c)"><img src={{c.c_img}} class="rounded"/></td>
+</tr>
+  </table>
+
+
+
+</div>

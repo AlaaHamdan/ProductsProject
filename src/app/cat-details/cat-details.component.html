@@ -1,0 +1,23 @@
+<h2 class="text-info">
+ {{catName}}  Category Details :
+</h2>
+
+ 
+
+<table class="table table-bordered table-responsive  text-info " [ngSwitch]="cat_id">
+  <thead><tr>
+    <th>product name</th>
+    <th>product price</th>
+    <th>product image</th>
+  </tr></thead>
+    <tr *ngFor="let p of prod" class=" bg-info text-white" >
+      
+    <td *ngSwitchCase="p.c_id" ><p >{{p.p_name}}</p> </td>
+    <td  *ngSwitchCase="p.c_id" >{{p.p_price}} </td>
+    <td  *ngSwitchCase="p.c_id" ><img src={{p.p_img}} class="rounded" /></td>
+    </tr>
+   
+  
+      </table>
+<button (click)="Add()" class="btn btn-primary">add product</button>
+ 

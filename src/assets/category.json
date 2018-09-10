@@ -1,0 +1,6 @@
+[
+    {"id":1, "name":"Dairy","c_img":"/assets/products/dairy.jpg"},
+    {"id":2, "name":"Fruits & vegitables","c_img":"/assets/products/fruitVeg.jpg"},
+    {"id":3, "name":"Meats","c_img":"/assets/products/meats.jpg"}
+
+]
